@@ -4,12 +4,12 @@
 Summary:	LWP::Parallel - module for parallel downloading
 Summary(pl):	LWP::Parallel - modu³ do równoleg³ego pobierania
 Name:		perl-LWP-Parallel
-Version:	2.54
-Release:	5
+Version:	2.56
+Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}UserAgent-%{version}.tar.gz
-# Source0-md5:	285d3d9f9f0cbbfdb87f28be9168229e
+# Source0-md5:	8209b7fa424f763312d515ec7b304c48
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:  perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -44,7 +44,6 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install t/example* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
