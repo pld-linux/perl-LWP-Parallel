@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	LWP
 %define	pnam	Parallel
-Summary:	LWP::Parallel perl module
-Summary(pl):	Modu³ perla LWP::Parallel
+Summary:	LWP::Parallel Perl module
+Summary(pl):	Modu³ Perla LWP::Parallel
 Name:		perl-LWP-Parallel
 Version:	2.54
 Release:	1
@@ -10,8 +10,8 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}UserAgent-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:  perl-libwww
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 LWP::Parallel - module for parallel downloading.
 
 %description -l pl
-LWP::Parallel - modu³ do równoleg³ego poberania.
+LWP::Parallel - modu³ do równoleg³ego pobierania.
 
 %prep
 %setup -q -n %{pnam}UserAgent-%{version}
