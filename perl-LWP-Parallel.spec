@@ -11,7 +11,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}UserAgent-%{version}.tar.gz
 # Source0-md5:	8209b7fa424f763312d515ec7b304c48
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:  perl-libwww
+BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,7 +35,7 @@ poprzedzniej.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
