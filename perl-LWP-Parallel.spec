@@ -5,7 +5,7 @@ Summary:	LWP::Parallel - module for parallel downloading
 Summary(pl):	LWP::Parallel - modu³ do równoleg³ego pobierania
 Name:		perl-LWP-Parallel
 Version:	2.54
-Release:	2
+Release:	3
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}UserAgent-%{version}.tar.gz
@@ -14,6 +14,8 @@ BuildRequires:  perl-libwww
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreqdep	'perl(UNIVERSAL)'
 
 %description
 ParallelUserAgent (or PUA for short) is an extension of the existing
