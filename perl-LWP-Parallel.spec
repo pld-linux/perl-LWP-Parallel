@@ -1,12 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	LWP
 %define	pnam	Parallel
-Summary:	LWP::Parallel Perl module
-Summary(pl):	Modu³ Perla LWP::Parallel
+Summary:	LWP::Parallel - module for parallel downloading.
+Summary(pl):	LWP::Parallel - modu³ do równoleg³ego pobierania.
 Name:		perl-LWP-Parallel
 Version:	2.54
-Release:	1
-License:	GPL
+Release:	2
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}UserAgent-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
@@ -16,10 +16,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-LWP::Parallel - module for parallel downloading.
+ParallelUserAgent (or PUA for short) is an extension of the existing
+libwww-5.x distribution.  It allows you to connect to download several
+Web pages in _parallel_, without having to request each page one after
+the other.
 
-%description -l pl
-LWP::Parallel - modu³ do równoleg³ego pobierania.
+# %description -l pl
+# TODO
 
 %prep
 %setup -q -n %{pnam}UserAgent-%{version}
@@ -34,7 +37,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install t/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+install t/example* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README README.SSL
 %{perl_sitelib}/LWP/*.pm
-%{perl_sitelib}/LWP/Parallel/*.pm
-%{_mandir}/man3/*
+%{perl_sitelib}/LWP/Parallel
+%{_mandir}/man3/LWP*
 %{_examplesdir}/%{name}-%{version}
