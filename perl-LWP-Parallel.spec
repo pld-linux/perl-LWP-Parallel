@@ -9,7 +9,7 @@ Release:	4
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}UserAgent-%{version}.tar.gz
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl-devel >= 5.6
 BuildRequires:  perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
