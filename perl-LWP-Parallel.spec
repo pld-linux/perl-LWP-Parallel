@@ -8,7 +8,7 @@ Version:	2.54
 Release:	2
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}UserAgent-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}UserAgent-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:  perl-libwww
 BuildRequires:	rpm-perlprov >= 3.0.3-16
