@@ -2,7 +2,7 @@
 %define		pdir	LWP
 %define		pnam	Parallel
 Summary:	LWP::Parallel - module for parallel downloading
-Summary(pl):	LWP::Parallel - modu³ do równoleg³ego pobierania
+Summary(pl.UTF-8):   LWP::Parallel - moduÅ‚ do rÃ³wnolegÅ‚ego pobierania
 Name:		perl-LWP-Parallel
 Version:	2.57
 Release:	1
@@ -25,10 +25,10 @@ libwww-5.x distribution.  It allows you to connect to download several
 Web pages in _parallel_, without having to request each page one after
 the other.
 
-%description -l pl
-ParallelUserAgent (w skrócie PUA) to rozszerzenie istniej±cego pakietu
-libwww-5.x. Pozwala na po³±czenie i ¶ci±ganie kilku stron WWW
-_równolegle_, bez konieczno¶ci ¿±dania kolejnej strony po ¶ci±gniêciu
+%description -l pl.UTF-8
+ParallelUserAgent (w skrÃ³cie PUA) to rozszerzenie istniejÄ…cego pakietu
+libwww-5.x. Pozwala na poÅ‚Ä…czenie i Å›ciÄ…ganie kilku stron WWW
+_rÃ³wnolegle_, bez koniecznoÅ›ci Å¼Ä…dania kolejnej strony po Å›ciÄ…gniÄ™ciu
 poprzedzniej.
 
 %prep
