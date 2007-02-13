@@ -2,7 +2,7 @@
 %define		pdir	LWP
 %define		pnam	Parallel
 Summary:	LWP::Parallel - module for parallel downloading
-Summary(pl.UTF-8):   LWP::Parallel - moduł do równoległego pobierania
+Summary(pl.UTF-8):	LWP::Parallel - moduł do równoległego pobierania
 Name:		perl-LWP-Parallel
 Version:	2.57
 Release:	1
