@@ -1,6 +1,6 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	LWP
 %define		pnam	Parallel
+%include	/usr/lib/rpm/macros.perl
 Summary:	LWP::Parallel - module for parallel downloading
 Summary(pl.UTF-8):	LWP::Parallel - moduł do równoległego pobierania
 Name:		perl-LWP-Parallel
@@ -11,6 +11,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/ParallelUserAgent-%{version}.tar.gz
 # Source0-md5:	7a1c42fbeee403606063f9ea7c691ed1
+URL:		http://search.cpan.org/dist/LWP-Parallel/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -21,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 ParallelUserAgent (or PUA for short) is an extension of the existing
-libwww-5.x distribution.  It allows you to connect to download several
+libwww-5.x distribution. It allows you to connect to download several
 Web pages in _parallel_, without having to request each page one after
 the other.
 
