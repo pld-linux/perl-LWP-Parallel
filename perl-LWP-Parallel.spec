@@ -1,6 +1,5 @@
 %define		pdir	LWP
 %define		pnam	Parallel
-%include	/usr/lib/rpm/macros.perl
 Summary:	LWP::Parallel - module for parallel downloading
 Summary(pl.UTF-8):	LWP::Parallel - moduł do równoległego pobierania
 Name:		perl-LWP-Parallel
